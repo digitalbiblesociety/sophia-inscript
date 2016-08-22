@@ -1,5 +1,4 @@
 # inScript
-----------
 
 ### Description
 
@@ -13,7 +12,7 @@ However, if you prefer to customize it yourself, if you are not daunted at runni
 
 ### The Team
 
-The Sophia Bible Study App was created by John Dyer @johndyer, is maintained by Jon Bitgood @jonbitgood, and the text processing is done by Michael Johnson. All three of us are members of the [Digital Bible Society](https://dbs.org). This site was built using [GitHub Pages](https://pages.github.com/) and is powered by the [Unity Bible Cloud API](http://api.bible.cloud).
+The Sophia Bible Study App was created by John Dyer, is maintained by Jon Bitgood, and the text processing is done by Michael Johnson. All three of us are members of the [Digital Bible Society](https://dbs.org). This site was built using [GitHub Pages](https://pages.github.com/) and is powered by the [Unity Bible Cloud API](http://api.bible.cloud).
 
 ### Copyrights
 
