@@ -8,7 +8,7 @@ inScript is a instance of Sophia, a Bible Study web app.
 
 We've created a simple and easy way for you to create your own site via a quick and easy form.
 
-However, if you prefer to customize it yourself, if you are not daunted at running a few terminal commands, and would like to install your own version of Sophia please refer to the instructions included in this repository.
+However, if you prefer to customize it yourself, if you are not daunted at running a few terminal commands, and would like to install your own version of Sophia please refer to the instructions included in [this repository](https://github.com/digitalbiblesociety/browserbible-3).
 
 ### The Team
 
