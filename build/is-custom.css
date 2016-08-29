@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* inScript CSS  */
+		
+.windows-header {
+	height: 48px; padding-right: 10px;padding:0; margin:0; border-bottom: 1px solid #16456D;
+	box-shadow: 0 1px 0 rgba(111, 151, 182, 0.5) inset, 0 -1px 0 rgba(111, 151, 182, 0.2) inset, 0px 1px 1px rgba(0, 0, 0, 0.2);
+	background-image: url(https://images.bible.cloud/noise.png), -webkit-linear-gradient(top, #578AB2, #316390);
+	background-image: url(https://images.bible.cloud/noise.png), linear-gradient(top, #578AB2, #316390);
+	background-image: url(https://images.bible.cloud/noise.png), -moz-linear-gradient(top, #578AB2, #316390);}
+
+.window .window-header {
+    height: 48px; padding:.7em .2em .2em .8em; margin:0; background-color:#F9F9F9; 
+	background-image: url(https://images.bible.cloud/noise.png), -webkit-linear-gradient(left,  #f9f9f9 0%,#f0f0f0 100%);
+	background-image: url(https://images.bible.cloud/noise.png), linear-gradient(to right,  #f9f9f9 0%,#f0f0f0 100%);
+	background-image: url(https://images.bible.cloud/noise.png), -moz-linear-gradient(left,  #f9f9f9 0%,#f0f0f0 100%); 
+ 	border-right: 2px solid #ccc; border-bottom:thin #D8D8D8 groove;}
+
+#main-menu-dropdown   	{top: 48px; left:8px; z-index:10;}
+.main-menu-heading	{background-color:#578ab2; border-bottom: 1px solid #666}
+.text-chooser .text-chooser-filter-text {background-color::#578ab2; border: solid 1px #999;}
+.text-chooser-selector svg  {margin: 0 0.4em 0 -0.2em; font-size: 1.25em;}
+
+#main-back-button {top: 8px;right: 330px;background-size: 30px 30px;}
+#main-forward-button {top: 8px;background-size: 30px 30px;right: 300px;}
+#main-search-input {width: 200px;height: 24px;font-size: 13px; margin-top:-10px;}
+#main-search-button {width: 28px;height: 24px; margin-top:-5px;}
+
+#app-logo .icon	{position: absolute; height: 46px; width: 104px; left: 9px; fill: #ddd; color: #89b1d6;}
+#app-logo:hover .icon {fill: #ffffff; color: #f9fa00;}
+
+#main-menu-button {line-height: 50px;font-size: 1.6rem;color: #ddd;}
+#main-menu-button:hover {color:#fff; }
+#main-fullscreen-button {font-size: 1.65rem; top:10px; right:10px;}
+#main-fullscreen-button:hover  {color: #fff;}
+
+.flag 	{margin: 0 12px 0 -18px; font-size: 1.8em; width:1.2rem height:1rem;}
+.close-container {top: 0;right: 0;width: 36px;height: 36px;background: transparent;}
+	

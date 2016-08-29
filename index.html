@@ -1,62 +1,64 @@
 <!DOCTYPE html>
-<html class="light">
+<html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="google" value="notranslate" />
-	<link href="build/images/favicon.png" rel="icon" />
-	<title>Bible - Windows</title>
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="viewport" content="initial-scale=1.0">
-	<meta name="viewport" content="maximum-scale=1.0">
-	<meta name="viewport" content="user-scalable=no">
-	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="http://inscript.bible.cloud/build/app.css?v=4.0.0" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://inscript.bible.cloud/build/app.js?v=4.0.0"></script>
-	<script>
-		sofia.config = $.extend(sofia.config, {
-			settingsPrefix: '20160425',
-			// first load
-			windows: [
-				{type: 'bible', data: {textid: 'ENGKJV', fragmentid: 'JN3_16'}},
-				{type: 'bible', data: {textid: 'ENGNAS', fragmentid: 'JN3_16'}}
-			],
-			enableBibleSelectorTabs: true,
-			textsIndexPath: 'dbs_texts.json',
-			baseContentUrl: 'http://inscript.bible.cloud/',
-			serverSearchPath: 'http://biblecloud.dev/api/bible/study/search/',
-			absUrl: 'http://biblecloud.dev/api/bible/abs/',
-			bibleSelectorDefaultList: ["ARZVDV","CHNCU1","CHNNCS","CHNCUV","CHNNCT","ENGESV","ENGNAS","ENGKJV", "ENGHCS","ENGNIV","ENGNET","ENGWEB","GRCTIS","HNDWTC","HBOWLC","PORJFA","RU1IBS","SPNR60","SPNBLA"],
-			// Enables the use of online sources (Google Maps, FCBH, Jesus Film, etc.)
-			enableOnlineSources: true,
-			enableFeedback: true,
-			feedbackUrl: 'http://biblecloud.dev/',
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="google" value="notranslate" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width">
+    <meta property="og:title" content="inScript | Read, Listen, and Search the Scriptures." />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Bible study application with Greek and Hebrew integration, syntax highlighting, and other fun goodies." />
+    <meta property="og:url" content="https://www.inscript.html" />
+    <meta property="og:image" content="https://inscript.bible.cloud/images/inscript_facebook_1200x630.jpg" />
+    <noscript><meta http-equiv="refresh" content="1; url=content/texts/"></noscript>
 
-			newCommentaryWindowTextId: "comm_eng_tske",
-			// Faith Comes by Hearing
-			fcbhKey: '111a125057abd2f8931f6d6ad9f2921f',
-			jfmKey: '52b06248a3c6e8.12980089',
-			gaKey: 'UA-3734687-19',
-			fcbhTextExclusions: ['ALSSHQ', 'ARZVDV', 'ARAWBT', 'BNGWTC', 'BZJWBT', 'MOPWBT', 'BBASIM', 'TBZSIM', 'FUESIM', 'FUHSIM', 'DOPSIM', 'MKLSIM', 'SOYSIM', 'CAVWBT', 'CAOWBT', 'CAPSBB', 'CAXSBB', 'ESEWBT', 'GUISBU', 'GNWWBT', 'GYRWBT', 'IGNSBB', 'QULSBB', 'QUHSBB', 'SRIWBT', 'TNAWBT', 'NHRBSB', 'APYWBT', 'APNWBT', 'APUWBT', 'BKQWBT', 'GUBWBT', 'HIXWBT', 'URBWBT', 'KBCWBT', 'KGPWBT', 'KGKWBT', 'KPJWBT', 'KYZWBT', 'TXUTBL', 'MBCWBT', 'MBLWBT', 'GUNWBT', 'MYUWBT', 'MBJWBT', 'NABWBT', 'PABTBL', 'PADWBT', 'RKBWBT', 'MAVWBT', 'PAHTBL', 'TERTBL', 'TUOWBT', 'XAVTBL', 'BOXWYI', 'CMEWBT', 'BSSWBT', 'ANVWBT', 'KENWBT', 'MQBWBT', 'NHUWBT', 'ALQCBS', 'CRXWBT', 'CAFWBT', 'DGRCBS', 'MICCBS', 'BJVWBT', 'DAAWYI', 'ARNSBU', 'CHNWTS', 'CHNCU1', 'CHNNCS', 'CHNCUV', 'CHNNCT', 'KWIWBT', 'BSNTBL', 'CBVWBT', 'KBHWBT', 'CBCWBT', 'TUFWBT', 'CUBWBT', 'CUIWBT', 'SJAWBT', 'GUHWBT', 'GUMTBL', 'GVCWBT', 'GUOWBT', 'INBWBT', 'MYYWBT', 'HTOWBT', 'BMRWBT', 'PIOWBT', 'PIRWBT', 'SNNWBT', 'TNCWBT', 'TAVWBT', 'TUEWBT', 'BAOWBT', 'NOAWBE', 'NOAWBT', 'YCNWBT', 'BZDWBT', 'YREWBT', 'CESKMS', 'CESNKB', 'CBIWBT', 'CONWBT', 'COFWBT', 'QVZWBT', 'SEYWBT', 'JIVAIE', 'AUCWBT', 'COPSHC', 'COPBHC', 'COPCNT', 'ENGASV', 'ENGBBE', 'ENGDBY', 'ENGDRV', 'ENGESV', 'ENGKJV', 'ENGLXX12', 'ENGNAS', 'ENGNET', 'ENGNIV', 'ENGRV5', 'ENGAMP', 'ENGT4T', 'ENGWEB', 'ENGWEBUK', 'AMHAMH', 'AMFSIM', 'DWRENT', 'DWRTBL', 'GMVTBL', 'GMVWBT', 'GO1TBL', 'GOFTBL', 'WALSIM', 'BREBRG', 'FRAOST', 'FRELSG', 'GERL12', 'NCUWBT', 'NKOWBT', 'GRCSBL', 'GRCTIS', 'CHAPGA', 'ACRWBT', 'ACRTNT', 'ACCIBS', 'AGUNVS', 'KNJWBT', 'CAAWBT', 'IXIWBT', 'IXLWBT', 'JACWBT', 'CAKSOU', 'CAKSWY', 'CAKSBG', 'CAKSMJ', 'CAKWES', 'CAKSDS', 'CAKEAS', 'QUCTRA', 'QUCNEW', 'MAMSBG', 'MAMCOM', 'POHBSG', 'KEKIBS', 'TTCWBT', 'TZJEAS', 'TZJWES', 'USPWBT', 'SUSPBT', 'YALPBT', 'AKEBSS', 'WAPWBT', 'HBOMAS', 'HBOWLC', 'CABNVS', 'JICWBT', 'HNDWTC', 'GUJWTC', 'TCVWTC', 'TCWWTC', 'KANWTC', 'ALPWBT', 'BLZLAI', 'PTULAI', 'HEGWBT', 'KJEWBT', 'MKNUBB', 'LEXWBT', 'MQJWBT', 'NBQWBT', 'YVATBL', 'AZBBSA', 'GLKWBT', 'PESPBS', 'AIIABT', 'SPYWBT', 'SXBWBT', 'AMUWBT', 'AZGTBL', 'CTAWBT', 'CTPWBT', 'CCOTBL', 'CNLTBL', 'CLETBL', 'CHZWBT', 'CPATBL', 'CHQWBT', 'CSOTBL', 'CNTTBL', 'CUCTBL', 'CTUWBT', 'CHDWBT', 'CHFTBL', 'CRNWBT', 'CUXWBT', 'CUTWBT', 'HUSWBT', 'HUSTBL', 'HUVTBL', 'HCHWBT', 'LACTBL', 'MAZTBL', 'MAQTBL', 'MAUWBT', 'MAJBTT', 'MAASJV', 'VMYWBT', 'MCOTBL', 'MIRTBL', 'MXQTBL', 'MXPWBT', 'MTOWBT', 'MIBWBT', 'MIHWBT', 'MIZTBL', 'XTDTBL', 'MXTTBL', 'XTMWBT', 'MIETBL', 'MILTBL', 'MIOWBT', 'MJCWBT', 'MIGWBT', 'MKSTBL', 'MITTBL', 'MXBMVR', 'MPMTBL', 'NHWTBL', 'NHEWBT', 'NGUTBL', 'AZZTBL', 'NCHTBL', 'NHETBL', 'NCLTBL', 'NHYTBL', 'NCJTBL', 'NPLWYI', 'NHGWBT', 'NHIWBT', 'OTMWBT', 'OTSWBT', 'OTETBL', 'OTQTBL', 'OTNWBT', 'POETBL', 'PLSWBT', 'POIWBT', 'TACWBT', 'TEETBL', 'TPTWBT', 'NTPTBL', 'STPTBL', 'TOJWBT', 'TOCTBL', 'TOSTBL', 'TOPWBT', 'TKUWBT', 'TOOWBT', 'TRCTBL', 'TZOSAN', 'TZOHUI', 'TZOZIN', 'YAQTBL', 'ZPOTBL', 'ZADWBT', 'ZPVTBL', 'ZPCWBT', 'ZCAWYI', 'ZAITBL', 'ZPLTBL', 'ZAMILM', 'ZAWMVR', 'ZPMTBL', 'ZACSIM', 'ZAOTBL', 'ZTQTBL', 'ZARTBL', 'ZABTBL', 'ZPIWYI', 'ZASWYI', 'ZAATBL', 'ZSRWBT', 'ZATWBT', 'ZPZTBL', 'ZPUTBL', 'ZTYTBL', 'ZAVTBL', 'ZPQTBL', 'ZOSTBL', 'CHKBSM', 'KPGKPT', 'KOSPUB', 'PONPJA', 'PONPSA', 'PONSSP', 'EKOWBT', 'MGHWBT', 'NYUWBT', 'SEHWBT', 'TKEWBT', 'MYAOJV', 'ZYPWBT', 'ATBWBT', 'LIFWBT', 'LIFDEV', 'SUZWBT', 'NPLWTC', 'PRIWBT', 'BQPSIM', 'BQCSIM', 'BUSSIM', 'IKKWBT', 'IKWWBT', 'KDLWBT', 'TSWWBT', 'SABWBT', 'EMPWYI', 'KVNWBT', 'GYMWBT', 'CUKNVS', 'TFRWBT', 'AAUWBT', 'ADZPNG', 'AGDWBT', 'AMPWBT', 'GAHPNG', 'AMNANA', 'AMNNAI', 'ABTMAP', 'ABTWOS', 'AEYWBT', 'APZPNG', 'ABYWBT', 'AGMPNG', 'AKHBSP', 'AAIWBT', 'AAKWBT', 'AGGPNG', 'BOJPNG', 'AUIWBT', 'AONWBT', 'TBGNOR', 'MWCWBT', 'APRWBT', 'MSYPNG', 'AVTWBT', 'KUDPNG', 'AWBTBL', 'AWXWBT', 'AUYTBL', 'BBBTBL', 'MLPTBL', 'BCHPNG', 'BEFWBT', 'BIGTBL', 'BHLPNG', 'BONPNG', 'BJRWBT', 'BNPWBT', 'KSRPNG', 'MUXTBL', 'BZHPNG', 'BUKLBT', 'APETBL', 'BDDPNG', 'BMUPNG', 'CJVTBL', 'MPSTBL', 'DGZWBT', 'ASOTBL', 'DWWTBL', 'DEDWBT', 'DOBPNG', 'KQCWBT', 'KJSWBT', 'ETRTBL', 'ENQPN2', 'ENQPNG', 'NOUTBL', 'FAIPNG', 'FAAWBT', 'AOJFIL', 'PPOWBT', 'FORNYB', 'PWGGTT', 'BMKWBT', 'BBRWBT', 'GVFWBT', 'GHSWBT', 'DAHPNG', 'HLAPNG', 'WOSWBT', 'HMOPNG', 'HOTWBT', 'HUIPNG', 'YMLTBL', 'VIVWBT', 'IMOTBL', 'INOTBL', 'IPIPNG', 'KBMTBL', 'NCAWBT', 'JAEPNG', 'KQFWBT', 'KMHKAL', 'KHZPNG', 'BCOWBT', 'KBQWBT', 'KMSPNG', 'XLAPNG', 'SOQWBT', 'KQWWIN', 'GAMWBT', 'KMUTBL', 'LEUPNG', 'YUJTBL', 'RWOKAR', 'KMPPNG', 'BMHWBT', 'KYGTBL', 'GEBPBT', 'KPWPNG', 'KPFPNG', 'XBIWAM', 'XBIYAN', 'KPRTBL', 'KZEWBT', 'KSDPNG', 'KUEPNG', 'KUPTBL', 'KTOPNG', 'KWJWBT', 'KYCPNG', 'LBBWBT', 'UVLWBT', 'MMXTBL', 'MZZWBT', 'MTITBL', 'MCQSPP', 'MVAPNG', 'MMOWBT', 'MBHTBL', 'MLHPNG', 'DADWBT', 'MHLPNG', 'MNAPNG', 'MEKPNG', 'MEDPNG', 'SIMPNG', 'MEETBL', 'MPTTBL', 'MPPWBT', 'MVNJLB', 'KMHMIN', 'MPXPNG', 'MOXFNS', 'KGFGBT', 'MEUPNG', 'KPXTBL', 'AOJTBL', 'EMIWBT', 'MYWPNG', 'NASPNG', 'NAFTBL', 'NAKTBL', 'NSSWBT', 'NVMWBT', 'NSNWBT', 'NIFWBT', 'IANWBT', 'NIITBL', 'GAWWBT', 'KLTWBT', 'NOPNTT', 'LIDWBT', 'KKCWBT', 'OPMTBL', 'ONGTBL', 'AOMTBL', 'OMWAAT', 'OMWSTA', 'ONSPNG', 'OKVTBL', 'PTPTBL', 'GFKTBL', 'ATAPNG', 'BYXPNG', 'RAITBL', 'RWORAW', 'ROOTBL', 'SBEWBT', 'SLLTBL', 'SNYTBL', 'SPSTBL', 'TUCOOV', 'TUCTUA', 'AMMTBL', 'SSGWBT', 'SPLPNG', 'SSXPNG', 'IWSTBL', 'SNPKOM', 'SNPLAM', 'SNCPNG', 'XSITBL', 'SSDWBT', 'SWPPNG', 'SUEWBT', 'SUKTBL', 'SGZWBT', 'KNVARA', 'KNVPNG', 'TBGWBT', 'TBCPNG', 'TGGWBT', 'TPAWBT', 'TBOWBT', 'TAWPBT', 'TLFTBL', 'TIFWBT', 'TIMTBL', 'TPIPNG', 'WEDTOP', 'TTETBL', 'IOUTBL', 'LCMPNG', 'UBRTBL', 'GDNPNG', 'UBUAND', 'UBUKAL', 'UBUNOP', 'WNUPNG', 'USAWBT', 'TPZWBT', 'OMWVEQ', 'WAJWBT', 'RROPNG', 'WRSPNG', 'WNCPNG', 'KMOBIL', 'WSKPNG', 'WEDWBT', 'WERTBL', 'KEWPNG', 'GDRPNG', 'WIUTBL', 'WUVWBT', 'YRBTBL', 'YUWPNG', 'YBYWBT', 'YSSYAW', 'YLETBL', 'YSSYAM', 'BYRPNG', 'BYRWAG', 'YONPNG', 'YUTWBT', 'ZIATBL', 'MCAWBT', 'ACUTBL', 'AGRTBL', 'CPCWBT', 'AMRWBT', 'ARLWBT', 'CNIWBT', 'CJOWBT', 'CPUWBT', 'CPBWBT', 'BOATBL', 'CBUWBT', 'KAQWBT', 'COTTBL', 'CBRWBT', 'CBTWBT', 'QUBWBT', 'HUBWBT', 'HUUWBT', 'CBSWBT', 'MCBWBT', 'MCFWBT', 'NOTWBT', 'QVCTBL', 'QVETBL', 'QVHWBT', 'QWHLLB', 'QVWWBT', 'QUFLLB', 'QVMTBL', 'QVNLLB', 'QXNWBT', 'QXHWBT', 'QVSTBL', 'QXOWBT', 'QUPWBT', 'MCDWBT', 'SHPTBL', 'TCATBL', 'URATBL', 'YADTBL', 'YAATBL', 'AMETBL', 'PIBWBT', 'AGNWPS', 'BLWWBT', 'BKDWBT', 'SMKWBT', 'CLUWBT', 'CBKWBT', 'EBKWBT', 'ABXWBT', 'CGCWBT', 'BPRWBT', 'MSMWPS', 'ATDWBT', 'MBTWBT', 'OBOWBT', 'MBBWPS', 'ATTWBT', 'PRFWBT', 'BGSWBT', 'TBLWBT', 'RUSBIB', 'ACFWBT', 'KWDWBT', 'SOMSIM', 'AFRA53', 'SPNBLA', 'SPNNBL', 'SPNR09', 'DIKWBT', 'UDUSIM', 'CARWBT', 'DJKWBT', 'HNSWBT', 'JVNWBT', 'SRMWBT', 'SRNBSS', 'TGKIBT', 'SWASWA', 'CWEPBT', 'RUFPBT', 'KDEWBT', 'POYPBT', 'GNGWYI', 'TONPNG', 'GWIWBT', 'HWCWBT', 'HOPWBT', 'PAONAB', 'GULWBT', 'OODWBT', 'APWWBT', 'ESKWBT', 'KLVWBT', 'TNKWBT', 'TNNWBT', 'PMAWBT', 'TVKWBT', 'NWIWBT', 'TGPWBT', 'TNPWBT', 'LATCLV', 'VIETBL'],
-			enableAmericanBibleSociety: true,
-			eng2pEnableAll: false,
-			deafCentric: false,
-			enableDeafBibleWindow: true,
-			deafBibleWindowDefaultBibleVersion: 'ASESLV'
-		});
-	</script>
-	<style>
-	#app-logo a {
-    	line-height:60px;
-    	color:#FFF;
-    	text-decoration:none;
-    	font-size:x-large;
-	}
-	</style>
+<!-- Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://images.bible.cloud/icons-bc/apple-touch-icon.png">
+    <link rel="apple-touch-startup-image" href="https://inscript.bible.cloud/images/startup.png" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" type="image/png" href="https://images.bible.cloud/icons-bc/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://images.bible.cloud/icons-bc/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://images.bible.cloud/icons-bc/manifest.json">
+    <link rel="mask-icon" href="https://images.bible.cloud/icons-bc/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https://images.bible.cloud/icons-bc/favicon.ico">
+    <meta name="msapplication-config" content="//images.bible.cloud/icons-bc/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+<!-- Build -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>	
+    <script src="https://inscript.bible.cloud/build/app.js?v=4.0.0"></script>
+    <link rel="stylesheet" href="https://inscript.bible.cloud/build/app.css?v=4.0.0" />
+    
+ <!-- Custom -->
+    <script src="build/config-custom.js?v=4.0.0"></script>
+    <link rel="stylesheet" href="build/is-custom.css?v=4.0.0" />
+
 </head>
 <body>
+	<div id="startup">
+		<h1>inScript Bible Browser (4.0)</h1>
+		<p>inScript 4.0 is a Bible-study tool created by the Digital Bible Society for both online and offline use.</p>
+		<p>The software is open-source, browser-based, multi-lingual, and free-to-use. It requires no installation and supports a wide variety of web-browsers and media platforms: thumb drives, DVDs, micro SD chips, etc.</p>
+		<p>Developed by <a href="https://www.dbs.org/">Digital Bible Society</a> with major contributions from <a href="https://j.hn/">John Dyer</a> and <a href="https://ebible.org/">Michael Johnson</a>. Audio provided by <a href="https://www.faithcomesbyhearing.com/‎">Faith Comes by Hearing</a> and video by <A href="https://www.jesusfilm.org/‎">Jesus Film Project</a>.</p>
+		<br/>
+		<h3>This page is visible when an error may have occurred. You might try updating your browser, or insuring JavaScript is enabled.</h3>
+		<p>If you have used older versions of inScript, you may also need to clear your browser cache.</p>
 
- <script>$( document ).ready(function() {$( "#app-logo" ).wrapInner( '<a class="title" href="//bible.cloud/"></a>' ); });</script>
+	
+	</div>
 
+
+<script>$( document ).ready(function() {$( "#app-logo" ).append( '<a href="//bible.cloud/"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="build/icons.svg#logo"></use></svg></a>' );
+});</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75606747-4', 'auto');
+  ga('send', 'pageview');
+</script>
 </body>
 </html>
