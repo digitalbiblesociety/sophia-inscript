@@ -35,4 +35,11 @@
 
 .flag 	{margin: 0 12px 0 -18px; font-size: 1.8em; width:1.2rem height:1rem;}
 .close-container {top: 0;right: 0;width: 36px;height: 36px;background: transparent;}
+
+.audio-controller {position: absolute;top: 50px;left: 0;width: 100%;background: #f8f8f8;border-top:0px; border-bottom: solid 1px #d9d9d9;
+    padding: 2px;height: 46px;font-size: 11px;z-index: 3;}
+.audio-controller .audio-slider {background: #cce3ea;position: absolute;top: 46px;left: 0; height: 10px; width: 100%;
+    -webkit-box-shadow: inset -2px -1px 4px 0px rgba(0,0,0,0.25);-moz-box-shadow: inset -2px -1px 4px 0px rgba(0,0,0,0.25);box-shadow: inset -2px -1px 4px 0px rgba(0,0,0,0.25);}
+.audio-controller .audio-play {width: 36px; height:36px; top:3px;}
+.audio-controller .audio-prev, .audio-controller .audio-next {width: 24px; height: 24px; top: 9px;}
 	
