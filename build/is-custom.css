@@ -25,8 +25,8 @@
 #main-search-input {width: 200px;height: 24px;font-size: 13px; margin-top:-10px;}
 #main-search-button {width: 28px;height: 24px; margin-top:-5px;}
 
-#app-logo .icon	{position: absolute; height: 46px; width: 104px; left: 9px; fill: #ddd; color: #89b1d6;}
-#app-logo:hover .icon {fill: #ffffff; color: #f9fa00;}
+#app-logo svg	{position: absolute; height: 46px; width: 104px; left: 9px; fill: #ddd; color: #89b1d6;}
+#app-logo:hover svg {fill: #ffffff; color: #f9fa00;}
 
 #main-menu-button {line-height: 50px;font-size: 1.6rem;color: #ddd;}
 #main-menu-button:hover {color:#fff; }
