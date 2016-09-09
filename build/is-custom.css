@@ -44,7 +44,7 @@
 	background-image: url(https://images.bible.cloud/noise.png), linear-gradient(top, #578AB2, #316390);
 	background-image: url(https://images.bible.cloud/noise.png), -moz-linear-gradient(top, #578AB2, #316390);}
 
-.audio-controller .audio-slider {background: #cce3ea;position: absolute;top: 46px;left: 0; height: 10px; width: 100%;
+.audio-controller .audio-slider {position: absolute;top: 46px;left: 0; height: 10px; width: 100%;
     -webkit-box-shadow: inset -2px -1px 4px 0px rgba(0,0,0,0.25);-moz-box-shadow: inset -2px -1px 4px 0px rgba(0,0,0,0.25);box-shadow: inset -2px -1px 4px 0px rgba(0,0,0,0.25);}
 .audio-controller .audio-play {width: 40px; height:40px; top:3px;}
 .audio-controller .audio-prev, .audio-controller .audio-next {width: 28px; height: 28px; top: 9px;}
