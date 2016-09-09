@@ -37,8 +37,8 @@
 .close-container {top: 0;right: 0;width: 36px;height: 36px;background: transparent;}
 
 
-.audio-controller {position: absolute;bottom: 0px;left: 0;width: 100%;background: #f8f8f8;border-top:0px; border-bottom: solid 1px #d9d9d9;
-    padding: 2px;height: 48px;font-size: 11px;z-index: 3;
+.audio-controller {position: absolute;bottom: 0px;left: 0;border-top:0px; border-bottom: solid 1px #d9d9d9;
+	padding: 2px;height: 48px;font-size: 11px;z-index: 3;
 	box-shadow: 0 1px 0 rgba(111, 151, 182, 0.5) inset, 0 -1px 0 rgba(111, 151, 182, 0.2) inset, 0px 1px 1px rgba(0, 0, 0, 0.2);
 	background-image: url(https://images.bible.cloud/noise.png), -webkit-linear-gradient(top, #578AB2, #316390);
 	background-image: url(https://images.bible.cloud/noise.png), linear-gradient(top, #578AB2, #316390);
