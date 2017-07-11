@@ -28,6 +28,8 @@
 <!-- Build -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>	
     <script src="https://inscript.bible.cloud/build/app-20170308.js?v=4.0.0"></script>
+	<script src="https://inscript.bible.cloud/build/config-basePaths.js"></script>
+	<script src="https://inscript.bible.cloud/build/config-baseSettings.js"></script>
     <link rel="stylesheet" href="https://inscript.bible.cloud/build/app-20170308.css?v=4.0.01" />
     
  <!-- Custom -->
@@ -39,16 +41,6 @@
 
         // Icon Skins (icons.svg, icons-pastel.svg, icons-black.svg)
         icons: 'build/icons.svg',
-        
-        // Paths    
-        baseContentUrl: 'https://inscript.bible.cloud/',
-		baseAPIUrl: 'https://api.bible.cloud/',
-		dbpBaseUrl: 'https://api.bible.cloud/bible/partners/fcbh/handshake/',
-        serverSearchPath: 'https://api.bible.cloud/bible/study/search/',
-        absUrl: 'https://api.bible.cloud/bible/partners/abs/',
-        feedbackUrl: 'https://bible.cloud/feedback/',
-        textsIndexPath: 'dbs_texts.json',
-        
             
         // First Load Set
         windows: [
@@ -57,12 +49,6 @@
         newBibleWindowVersion: 'ENGNIV',
         deafBibleWindowDefaultBibleVersion: 'ASESLS',
         newCommentaryWindowTextId: "comm_eng_tske",
-
-        // Bibles in Default Menu
-        bibleSelectorDefaultList: [
-                    "ARZVDV","CHNCU1","CHNNCS","CHNCUV","CHNNCT","ENGESV","ENGNAS","ENGKJV", 
-                    "ENGHCS","ENGNIV","ENGNET","ENGWEB","GRCTIS","HNDWTC","HBOWLC","PORJFA",
-                    "RU1IBS","SPNR60","SPNBLA"],
         
         // Switches    
         enableBibleSelectorTabs: true,
@@ -73,12 +59,6 @@
  
         // Enables the use of online sources (Google Maps, FCBH, Jesus Film, etc.)
         enableOnlineSources: true,
-            
-        // Keys
-        fcbhKey: '111a125057abd2f8931f6d6ad9f2921f',
-        jfmKey: '52b06248a3c6e8.12980089',
-        gaKey: 'UA-75606747-4',
-        gaUrl: 'inscript.org',
 
         });
     </script>
