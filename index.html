@@ -26,12 +26,12 @@
     <meta name="theme-color" content="#ffffff">
 
 <!-- Build -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://dbs-bible-cloud.s3-us-west-2.amazonaws.com/inscript/build/build.min.js"></script>
 	<script src="https://inscript.bible.cloud/build/config-basePaths.js?v=4.0.3"></script>
 	<script src="https://inscript.bible.cloud/build/config-baseSettings.js?v=4.0.3"></script>
     <link rel="stylesheet" href="https://dbs-bible-cloud.s3-us-west-2.amazonaws.com/inscript/build/build.min.css?v=4.0.3" />
-    
+
  <!-- Custom -->
     <link rel="stylesheet" href="build/is-custom.css?v=4.0.03" />
         <script>
@@ -39,16 +39,15 @@
         siteTitle: '',
         settingsPrefix: '20170923',
 
-
         baseContentUrl: 'https://inscript.bible.cloud/',
-	baseContentApiKey: 1234,
-        baseContentVersion: 5,
-        dbpBaseUrl: 'https://dbt.io/',
         serverSearchPath: 'https://api.bible.build/search/',
+        baseContentVersion: 5,
+        baseContentApiKey: 1234,
 
         // Icon Skins (icons.svg, icons-pastel.svg, icons-black.svg)
         icons: 'build/icons.svg',
-            
+
+
         // First Load Set
         windows: [
             {type: 'bible', data: {textid: 'ENGNIV', fragmentid: 'JN3_16'}},
@@ -56,20 +55,21 @@
         newBibleWindowVersion: 'ENGNIV',
         deafBibleWindowDefaultBibleVersion: 'ASESLS',
         newCommentaryWindowTextId: "comm_eng_tske",
-        
-        // Switches    
+
+        // Switches
         enableBibleSelectorTabs: false,
         enableFeedback: true,
         eng2pEnableAll: true,
-        enableDeafBibleWindow: true,
+        enableAmericanBibleSociety: false,
+        enableDeafBibleWindow: false,
         deafCentric: false,
- 
+        fcbhKey: '',
+
         // Enables the use of online sources (Google Maps, FCBH, Jesus Film, etc.)
         enableOnlineSources: true,
 
         });
     </script>
-
     <!-- Fallback -->
     <noscript><meta http-equiv="refresh" content="1; url=https://bible.build/reader/"></noscript>
     <!--[if lte IE 8]><meta http-equiv="refresh" content="1; url=https://bible.build/reader/"><![endif]-->
