@@ -37,4 +37,8 @@
 .close-container {top: 0;right: 0;width: 36px;height: 36px;background: transparent;}
 
 .header-icon.audio-button {font-size: 1.7em}
+
+.section em {
+	font-style: normal;
+}
 	
