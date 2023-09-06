@@ -1,11 +1,8 @@
-// replacement IE console
-if (typeof console == 'undefined') { window.console = {log:function() {}}; }
-
 // everything goes here
 window.sofia = {};
 
 // version
-sofia.version = '3.8.4';
+sofia.version = '4.0';
 
 // allows items to register themselves
 sofia.plugins = [];
@@ -17,10 +14,3 @@ sofia.globals = {};
 
 // language
 sofia.resources = {};
-
-
-if (window.location.protocol === 'file:') {
-	sofia.protocol = 'https:';
-} else {
-	sofia.protocol = '';
-}
