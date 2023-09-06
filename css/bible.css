@@ -113,6 +113,7 @@
 /* Gospels red letters */
 .woc,
 .wj {
+	font-style:normal!important;
 	color: #A00;
 }
 
